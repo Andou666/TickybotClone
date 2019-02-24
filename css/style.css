@@ -1,0 +1,198 @@
+:root{
+   --header-background-color: #40596B; 
+   --header-color: #FFD05A;
+
+   --section-home-background-color: #55C0EC;
+   --section-home-h1-color : #1E4352;
+
+   --section-features-background-color: #90DDAA;
+
+   --footer-background-color:#40596B;
+   --footer-color: #ECEFF0;
+
+   --scroll-button-background-color: #FFD05A;
+   --scroll-button-color:#40596B;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+h3{
+    font-size: 1.6em;
+    text-align: center;
+}
+
+button{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 1.5em 1.8em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;   
+}
+
+code{
+    background: #EDEDED;
+    color: red;
+    margin: 0.3em;
+}
+
+/* header */
+header{
+    background: var(--header-background-color);
+    
+    display: flex;
+    justify-content: center; 
+}
+
+header > ul > li{
+    list-style: none;
+    margin-right: 1.2em;
+    display:inline;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+header a:hover{
+    text-decoration: none;
+    filter: brightness(200%);
+    transition: 2s;
+    color: var(--header-color);
+}
+
+/* section: home */
+section#home{
+   background-color: var(--section-home-background-color);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
+}
+
+#home h1{
+    font-size: 4em;
+    margin: 0.3em 0;
+    user-select: none;
+    color: var(--section-home-h1-color);
+}
+
+#home p{
+    font-size: 1.3em;
+    margin-left: 1.5em;
+    color: white;
+}
+
+svg{
+    position: relative;
+    margin: 0 auto;
+	width: 80%;   
+}
+
+.hero_item{
+    text-align: center;   
+}
+
+/* sevtion: about */
+
+#about > div{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#about p{
+    margin: 0 1.6em 1.3em 1.6em;
+}
+
+
+
+/* section: features */
+section#features{
+    background-color: var(--section-features-background-color);
+    padding-bottom: 2em;
+}
+
+#features > h3{
+    margin: 0 0 1.2em 0;
+    padding-top: 1.2em;
+    background-color: var(--section-features-background-color);
+}
+
+.cards{
+    display: grid;
+    grid-gap: 0.9em;
+    grid-template-columns:repeat(auto-fit,minmax(3,1fr));
+    justify-content: space-around;
+}
+
+.card > div{
+    display: flex;
+    justify-content: center;
+    height: 12em;
+    padding: 0.7em 0;
+    background: #40596B;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.card > p{
+    background: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0;
+    padding: 0.2em 1.2em;
+}
+
+/* section: cta */
+section#cta{
+    text-align: center;
+}
+
+#cta > p{
+    margin: 0 5em;
+}
+
+#cta button{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/* footer */
+footer{
+    margin-top: 1.2em;
+    background-color: var(--footer-background-color);
+    color: var(--footer-color);
+    text-align: center;
+}
+
+footer > p{
+    margin: 0;
+    padding-top: 1.2em;
+    font-size: 0.3em;
+}
+
+/* scrollbutton */
+#scrollbutton{
+    position: fixed;
+    border-radius: 15%;
+    background-color: var(--scroll-button-background-color);
+    color: var(--scroll-button-color);
+    padding: 1.2em;
+    bottom: 30px;
+    right: 15px;
+}
+
+.removeButton{
+    display: none;
+}
